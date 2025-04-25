@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>reeliz-device</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: black;
+      font-family: 'Inter', sans-serif;
+    }
+    canvas {
+      display: block;
+    }
+    #form-container {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      display: flex;
+    }
+    input {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 20px;
+      outline: none;
+      min-width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div id="form-container">
+    <input type="text" id="textInput" placeholder="방문록을 남겨주세요 ✍️" />
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
